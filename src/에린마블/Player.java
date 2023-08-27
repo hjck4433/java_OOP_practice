@@ -49,17 +49,17 @@ public class Player {
         }else if(jobs == 5) jobs = (int)(Math.random() * 4)+1;
 
     }
-    public void setGold(int g) {
-        gold += g;
+    public void setGold(int gold) {
+        this.gold += gold;
     }
-    public void setAbilityPoint(int ap) {
-        abilityPoint += ap;
+    public void setAbilityPoint(int abilityPoint) {
+        this.abilityPoint += abilityPoint;
     }
-    public void setFire(int f) {
-        fire += f;
+    public void setFire(int fire) {
+        this.fire += fire;
     }
-    public void setIceFire(int iF) {
-        iceFire += iF;
+    public void setIceFire(int iceFire) {
+        this.iceFire += iceFire;
     }
     public String getName() {
         return name;
