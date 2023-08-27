@@ -24,9 +24,10 @@ public class ErinnMarbleMain {
                 System.out.println("주사위 던지는 방법을 선택하실 수 있습니다. 1 ~ 6 선택 시 200~700골드가 차감됩니다. 랜덤은 100골드 차감됩니다.");
                 System.out.print("[1] ~ [6] 또는 [7] 랜덤 선택 : ");
                 int selN = sc.nextInt();
-                marble.rollDice(selN);
-                marble.getStatus();
-                player.setGold(marble.getGold());
+                marble.rollDice(selN, player);
+                marble.getStatus(player);
+                System.out.println("=".repeat(20));
+                System.out.println();
                 if(marble.finishLine()) break;
                 System.out.print("계속 하시겠습니까? (yes/no) : ");
                 start = sc.next();
@@ -36,6 +37,10 @@ public class ErinnMarbleMain {
                 }
             }
         }
+        player.getInfo();
+        Player player2 = new Player();
+        player2.getInfo();
+        player.getInfo();
 
     }
 }
