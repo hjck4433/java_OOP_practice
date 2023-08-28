@@ -84,6 +84,7 @@ public class Player {
         System.out.println("성별 : " + gender);
         System.out.println("종족 : " + race[races]);
         System.out.println("직업 : " + job[jobs]);
-        System.out.printf("골드 : %d / AP : %d / 불타래 : %d / 얼어붙은 불타래 : %d \n",gold,abilityPoint,fire,iceFire);
+        //System.out.printf("골드 : %d / BC : %d / 불타래 : %d / 얼어붙은 불타래 : %d \n",gold,abilityPoint,fire,iceFire);
+        System.out.println("골드 : " + gold + " / AP : " + abilityPoint + " / 불타래 : " + fire + "/ 얼어붙은 불타래 : " + iceFire);
     }
 }

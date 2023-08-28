@@ -19,7 +19,8 @@ public class Marble {
         return isGame;
     }
     public void getStatus(Player p) {
-        System.out.printf("골드 : %d / AP : %d / 불타래 : %d / 얼어붙은 불타래 : %d \n",p.getGold(),p.getAbilityPoint(),p.getFire(),p.getIceFire());
+        //System.out.printf("골드 : %d / BC : %d / 불타래 : %d / 얼어붙은 불타래 : %d \n",p.getGold(),p.getAbilityPoint(),p.getFire(),p.getIceFire());
+        System.out.println("골드 : " + p.getGold() + " / AP : " + p.getAbilityPoint() + " / 불타래 : " + p.getFire() + "/ 얼어붙은 불타래 : " + p.getIceFire());
     }
     public void rollDice(int selN, Player p) { // 주사위를 선택해서 돌리는 경우
         if(selN == 7) {
